@@ -3,21 +3,21 @@
 import React from 'react';
 import { generate } from 'randomized-string';
 import { alphanumeric } from 'randomized-string/lib/types';
+import { createStore } from 'redux';
 import Book1 from './Book';
 import AddBook from './AddBook';
+import reducer from '../../redux/configureStore';
 
 const Books = () => {
-  const booksList = [];
+  const booksList = createStore(reducer);
   return (
     <>
       <main>
         <section>
-          { booksList.map((book) => (
             <Book1
               key={generate({ charset: alphanumeric, length: 32 })}
-              {...book}
+              {...booksList}
             />
-          ))}
         </section>
         <section>
           <AddBook />
