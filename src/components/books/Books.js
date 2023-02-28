@@ -14,10 +14,10 @@ const Books = () => {
     <>
       <main>
         <section>
-            <Book1
-              key={generate({ charset: alphanumeric, length: 32 })}
-              {...booksList}
-            />
+          <Book1
+            key={generate({ charset: alphanumeric, length: 32 })}
+            {...booksList}
+          />
         </section>
         <section>
           <AddBook />
