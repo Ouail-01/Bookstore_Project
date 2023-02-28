@@ -3,13 +3,11 @@
 import React from 'react';
 import { generate } from 'randomized-string';
 import { alphanumeric } from 'randomized-string/lib/types';
-import { createStore } from 'redux';
 import Book1 from './Book';
 import AddBook from './AddBook';
-import reducer from '../../redux/configureStore';
 
 const Books = () => {
-  const booksList = createStore(reducer);
+  const booksList = [];
   return (
     <>
       <main>
