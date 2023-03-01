@@ -12,12 +12,10 @@ const Books = () => {
     <>
       <main>
         <section>
-          { booksList.map((book) => (
-            <Book1
-              key={generate({ charset: alphanumeric, length: 32 })}
-              {...book}
-            />
-          ))}
+          <Book1
+            key={generate({ charset: alphanumeric, length: 32 })}
+            {...booksList}
+          />
         </section>
         <section>
           <AddBook />
