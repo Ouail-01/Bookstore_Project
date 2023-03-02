@@ -27,16 +27,16 @@ const AddBook = () => {
 
   return (
     <>
-    <hr />
-    <div>
-      <h3>Add A New Book</h3>
-      <form onSubmit={handleClick}>
-        <input type="text" placeholder="Title" onChange={titleEdit} required />
-        <input type="text" placeholder="author" onChange={authorEdit} required />
-        <button type="submit">Add Book</button>
-      </form>
-    </div>
-  </>
+      <hr />
+      <div>
+        <h3>Add A New Book</h3>
+        <form onSubmit={handleClick}>
+          <input type="text" placeholder="Title" onChange={titleEdit} required />
+          <input type="text" placeholder="author" onChange={authorEdit} required />
+          <button type="submit">Add Book</button>
+        </form>
+      </div>
+    </>
   );
 };
 
