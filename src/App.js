@@ -1,23 +1,19 @@
-/* eslint-disable */
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import { Provider } from 'react-redux';
+import React from 'react';
+import { Route, Routes } from 'react-router-dom';
 import Navbar from './components/navbar/Navbar';
-import Categories from './components/categories/Categories';
 import Books from './components/books/Books';
-import store from './redux/configureStore';
+import Categories from './components/categories/Categories';
 
-const App = () => (
-  <>
-  <Provider store={store}>
-  <Router>
-    <Navbar />
-    <Routes>
-      <Route path="/" element={<Books />} />
-      <Route path="/Categories" element={<Categories />} />
-    </Routes>
-  </Router>
-  </Provider>
-  </>
-);
+function App() {
+  return (
+    <>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Books />} />
+        <Route path="/categories" element={<Categories />} />
+      </Routes>
+    </>
+  );
+}
 
 export default App;
