@@ -1,5 +1,5 @@
 import React from 'react';
-import { useDispatch , useSelector } from 'react-redux/es/exports';
+import { useDispatch, useSelector } from 'react-redux/es/exports';
 import { checkStatus } from '../../redux/categories/categoriesSlice';
 
 const Categories = () => {
