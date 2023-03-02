@@ -1,5 +1,5 @@
 import React from 'react';
-import { useDispatch } from 'react-redux/es/exports';
+import { useDispatch , useSelector } from 'react-redux/es/exports';
 import { checkStatus } from '../../redux/categories/categoriesSlice';
 
 const Categories = () => {
@@ -8,9 +8,11 @@ const Categories = () => {
     dispatch(checkStatus());
   };
 
+  const status = useSelector((state) => state.checkStatus);
   return (
     <>
       <button type="button" onClick={handleStatus}>Check status</button>
+      <p>{status}</p>
     </>
   );
 };
