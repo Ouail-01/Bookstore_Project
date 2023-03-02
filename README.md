@@ -54,7 +54,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> [Live Demo Link](https://ouail-01.github.io/Math-Magicians_Calculator)
+> [Live Demo Link](https://ouail-01.github.io/Bookstore_Project/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
