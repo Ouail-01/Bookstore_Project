@@ -68,6 +68,7 @@
   background: none;
   border: none;
   margin-right: 1.063rem;
+  cursor: pointer;
 }
 
 .Line-2 {
@@ -194,4 +195,5 @@
   color: #e8e8e8;
   background-color: #0290ff;
   border: none;
+  cursor: pointer;
 }
