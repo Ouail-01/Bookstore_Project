@@ -140,6 +140,9 @@
     position: absolute;
     z-index: 100;
 }
+.prcg {
+    margin-left: 1.3rem;
+}
 
 .prcg  h5{
     font-family: 'Montserrat',sans-serif;
