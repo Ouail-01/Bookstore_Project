@@ -1,4 +1,3 @@
-/* eslint-disable */
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
@@ -29,8 +28,8 @@ const AddBook = () => {
 
   return (
     <div className="form">
-      <div className="Line"/>
-      <div >
+      <div className="Line" />
+      <div>
         <h3>ADD NEW BOOK</h3>
         <form onSubmit={handleClick}>
           <input type="text" placeholder="Book Title" onChange={titleEdit} required />
