@@ -5,6 +5,7 @@ const Book = ({ title, author }) => (
   <>
     <h2>{title}</h2>
     <p>{author}</p>
+    <button type="button">Remove</button>
   </>
 );
 Book.propTypes = {
