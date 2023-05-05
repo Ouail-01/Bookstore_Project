@@ -109,7 +109,7 @@ Open the html file in the dist folder.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-🤝 Contributing
+## 🤝 Contributing <a name="Contributing"></a>
 Contributions, issues, and feature requests are welcome!
 
 <p align="right"><p align="right">(<a href="#readme-top"><a href="#readme-top">back to top</a></a>)</p></p>

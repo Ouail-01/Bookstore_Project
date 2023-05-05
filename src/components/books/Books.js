@@ -1,3 +1,5 @@
+/* eslint-disable react/jsx-props-no-spreading */
+
 import React from 'react';
 import { generate } from 'randomized-string';
 import { alphanumeric } from 'randomized-string/lib/types';
