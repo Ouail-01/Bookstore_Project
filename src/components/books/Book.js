@@ -12,9 +12,5 @@ Book.propTypes = {
   title: PropTypes.string.isRequired,
   author: PropTypes.string.isRequired,
 };
-const Book1 = () => (
-  <>
-  </>
-);
 
-export default Book1;
+export default Book;
