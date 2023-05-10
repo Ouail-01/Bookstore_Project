@@ -1,21 +1,23 @@
-/* eslint-disable react/jsx-props-no-spreading */
-
 import React from 'react';
-import { generate } from 'randomized-string';
-import { alphanumeric } from 'randomized-string/lib/types';
-import Book1 from './Book';
+import { useSelector } from 'react-redux';
+import Book from './Book';
 import AddBook from './AddBook';
 
 const Books = () => {
-  const booksList = [];
+  const booksList = useSelector((state) => state.books);
+
   return (
     <>
       <main>
         <section>
-          <Book1
-            key={generate({ charset: alphanumeric, length: 32 })}
-            {...booksList}
-          />
+          {booksList.map((book) => (
+            <Book
+              key={book.id}
+              id={book.id}
+              title={book.title}
+              author={book.author}
+            />
+          ))}
         </section>
         <section>
           <AddBook />
