@@ -1,4 +1,3 @@
-/* eslint-disable */
 import axios from 'axios';
 
 const ADDBOOK = 'bookstore/books/ADDBOOK';
@@ -8,7 +7,6 @@ const FETCHBOOK = 'bookstore/books/FETCH_BOOK';
 const BaseUrl = 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/ojJtJCBCCctn1SyYmiqB/books';
 
 const booksReduce = (state = [], action) => {
-  
   switch (action.type) {
     case ADDBOOK:
       return [
