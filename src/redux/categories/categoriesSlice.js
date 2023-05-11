@@ -3,7 +3,7 @@ const COMPLETED = 'bookstore/categories/COMPLETED';
 const categoriesReduce = (state = [], action) => {
   switch (action.type) {
     case COMPLETED:
-      return 'Soon';
+      return 'Under Construction';
     default:
       return state;
   }
