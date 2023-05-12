@@ -1,6 +1,7 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux/es/exports';
 import { checkStatus } from '../../redux/categories/categoriesSlice';
+import '../../style/Categories.css';
 
 const Categories = () => {
   const dispatch = useDispatch();
@@ -10,10 +11,11 @@ const Categories = () => {
 
   const status = useSelector((state) => state.checkStatus);
   return (
-    <>
-      <button type="button" onClick={handleStatus}>Check status</button>
+    <div className="categories">
+      <button type="button" onClick={handleStatus}>CHECK STATUS</button>
       <p>{status}</p>
-    </>
+      <div className="lds-dual-ring" />
+    </div>
   );
 };
 
