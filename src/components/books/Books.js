@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import Book from './Book';
 import AddBook from './AddBook';
 import { apiFetchBook } from '../../redux/books/booksSlice';
+import '../../style/Books.css';
 
 const Books = () => {
   const booksList = useSelector((state) => state.books);
@@ -14,8 +15,8 @@ const Books = () => {
 
   return (
     <>
-      <main>
-        <section>
+      <main className="main">
+        <section className="section1">
           {booksList.map((book) => (
             <Book
               key={book.id}

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
 import { apiAddBook } from '../../redux/books/booksSlice';
+import '../../style/AddBook.css';
 
 const AddBook = () => {
   const dispatch = useDispatch();
@@ -26,17 +27,17 @@ const AddBook = () => {
   };
 
   return (
-    <>
-      <hr />
+    <div className="form">
+      <div className="Line" />
       <div>
-        <h3>Add A New Book</h3>
+        <h3>ADD NEW BOOK</h3>
         <form onSubmit={handleClick}>
-          <input type="text" placeholder="Title" onChange={titleEdit} required />
-          <input type="text" placeholder="author" onChange={authorEdit} required />
-          <button type="submit">Add Book</button>
+          <input type="text" placeholder="Book Title" onChange={titleEdit} required />
+          <input type="text" placeholder="Book Author" onChange={authorEdit} required />
+          <button type="submit">ADD BOOK</button>
         </form>
       </div>
-    </>
+    </div>
   );
 };
 
